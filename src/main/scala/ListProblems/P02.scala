@@ -1,6 +1,6 @@
 package ListProblems
 /*
-Problem 02: Find the last but one element of a list.
+Problem 02: Find the last but one element of a List.
 Example:
 scala> penultimate(List(1, 1, 2, 3, 5, 8))
 res0: Int = 5
@@ -15,7 +15,6 @@ object P02 {
     }
     def readList(n: Int): Unit ={
       val vec:Array[Int] = new Array[Int](n)
-      println("Size of the list is " + vec.length)
       println("Enter the content of the list")
       for(i <- vec.indices){
         val in = scala.io.StdIn.readLine().toIntOption
@@ -26,7 +25,7 @@ object P02 {
         }
       }
       val list1 = vec.toList
-      println("This is the list: " + list1)
+      println(list1)
       penultimateOfList(list1)
     }
     @scala.annotation.tailrec

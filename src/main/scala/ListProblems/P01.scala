@@ -1,6 +1,6 @@
 package ListProblems
 /*
-Problem 01:  Find the last element of a list.
+Problem 01:  Find the last element of a List.
 Example:
 scala> last(List(1, 1, 2, 3, 5, 8))
 res0: Int = 8
@@ -18,7 +18,6 @@ object P01{
     def readList(n: Int): Unit ={
       val vec:Array[Int] = new Array[Int](n)
       //Theoretically it's first an array and then we turn it into a list.
-      println("Size of the list is " + vec.length)
       println("Enter the content of the list")
       for(i <- 0 until vec.length){ // vec.indices works too
         val in = scala.io.StdIn.readLine().toIntOption
@@ -36,7 +35,7 @@ object P01{
         }
       }
       val list1 = vec.toList
-      println("This is the list: " + list1)
+      println(list1)
       lastOfList(list1)
     }
     @scala.annotation.tailrec

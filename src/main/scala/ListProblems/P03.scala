@@ -1,6 +1,6 @@
 package ListProblems
 /*
-Problem 03: Find the Kth element of a list.
+Problem 03: Find the Kth element of a List.
 By convention, the first element in the list is element 0.
 Example:
 scala> nth(2, List(1, 1, 2, 3, 5, 8))
@@ -17,7 +17,6 @@ object P03 {
 
     def readList(n: Int): Unit = {
       val vec: Array[Int] = new Array[Int](n)
-      println("Size of the list is " + vec.length)
       println("Enter the content of the list")
       for (i <- vec.indices) {
         val in = scala.io.StdIn.readLine().toIntOption
@@ -28,7 +27,7 @@ object P03 {
         }
       }
       val list1 = vec.toList
-      println("This is the list: " + list1)
+      println(list1)
       println("Please enter the number of the element to search")
       val k = scala.io.StdIn.readLine().toIntOption
       k match {
