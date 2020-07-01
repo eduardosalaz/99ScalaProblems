@@ -1,4 +1,4 @@
-package Problems1to10
+package ListProblems
 /*
 Problem 01:  Find the last element of a list.
 Example:
@@ -42,7 +42,7 @@ object P01{
     @scala.annotation.tailrec
     def lastOfList(list1: List[Int]): Unit={
       /*
-      Lists in Scala are immutable and follow the rules that Lists in Lisp do: a head, which is the first method of the list,
+      Lists in Scala are immutable and follow the rules that Lists in Lisp do: a head, which is the first element of the list,
       the tail: which is everything except the first item,
       the :: operator, also called cons, very similar to the one of Lisp,
       the isEmpty method, pretty self explanatory.

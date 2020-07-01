@@ -1,4 +1,4 @@
-package Problems1to10
+package ListProblems
 /*
 Problem 02: Find the last but one element of a list.
 Example:

@@ -1,4 +1,4 @@
-package Problems1to10
+package ListProblems
 /*
 Problem 03: Find the Kth element of a list.
 By convention, the first element in the list is element 0.
@@ -29,7 +29,7 @@ object P03 {
       }
       val list1 = vec.toList
       println("This is the list: " + list1)
-      println("Please enter the number of the element to search ")
+      println("Please enter the number of the element to search")
       val k = scala.io.StdIn.readLine().toIntOption
       k match {
         case Some(k: Int) => kthElement(list1, k)
